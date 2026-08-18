@@ -1,4 +1,4 @@
-# Cell 2: Quantum Simulation Engine Module
+%%writefile src/quantum_sim.py
 import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector, state_fidelity, DensityMatrix
@@ -43,13 +43,11 @@ def run_fidelity_circuit(noise_model: NoiseModel = None, shots: int = 1024) -> d
         simulated_dm = ideal_dm
 
     fidelity_clamped = max(0.0, min(1.0, float(state_fidelity(ideal_dm, simulated_dm))))
+    dm_data = np.array(simulated_dm.data)
+    
     return {
         "fidelity": fidelity_clamped,
-        "density_matrix_abs": np.abs(np.array(simulated_dm.data)),
+        "density_matrix": dm_data,
+        "density_matrix_abs": np.abs(dm_data),
         "counts": counts
     }
-
-# --- TEST VERIFICATION ---
-test_noise = build_noise_model(t1_us=120.0, t2_us=80.0, gate_time_us=0.05)
-output = run_fidelity_circuit(test_noise)
-print(f"Success! Quantum Gate Fidelity: {output['fidelity'] * 100:.2f}%") 
