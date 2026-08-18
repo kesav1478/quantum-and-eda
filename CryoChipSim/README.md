@@ -1,1 +1,11 @@
- 
+# ❄️ CryoChipSim: Cryogenic Chiplet Co-Design & Gate Fidelity Suite
+
+Multi-Domain Co-Simulation Suite for Cryogenic Classical Controllers (Cryo-CMOS) & Quantum Processor Gate Fidelity. Built for the L&T Semiconductor & LTTS Hackathon.
+
+## 🚀 Quick Start
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/YOUR_ORGANIZATION/CryoChipSim.git](https://github.com/YOUR_ORGANIZATION/CryoChipSim.git)
+   cd CryoChipSim
+    
