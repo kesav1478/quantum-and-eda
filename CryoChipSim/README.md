@@ -6,6 +6,6 @@ Multi-Domain Co-Simulation Suite for Cryogenic Classical Controllers (Cryo-CMOS)
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/YOUR_ORGANIZATION/CryoChipSim.git](https://github.com/YOUR_ORGANIZATION/CryoChipSim.git)
+   git clone [https://github.com/kesav1478/CryoChipSim.git](https://github.com/kesav1478CryoChipSim.git)
    cd CryoChipSim
     
